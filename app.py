@@ -64,7 +64,7 @@ def load_and_train_model():
     df = pd.read_csv('heart_1.csv')
     
     # Split features and target
-    X = df.drop(columns='target', axis=1)
+    X = df.drop(columns='target')
     Y = df['target']
     
     # Train test split
